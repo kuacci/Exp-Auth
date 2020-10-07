@@ -1,0 +1,29 @@
+@url=http://localhost:7001/api/users
+@loginUrl=http://localhost:7001/api/auth/login
+@json=Content-Type: application/json
+
+
+
+
+### Profile
+GET {{url}}/profile
+
+### 注册
+POST {{url}}/register
+{{json}}
+
+{
+    "name":"user1",
+    "email":"user1@toxiao.org",
+    "password":"123456"
+}
+
+###登录
+POST {{loginUrl}}
+{{json}}
+
+{
+    "name":"user1",
+    "email":"user1@toxiao.org",
+    "password":"123456"
+}
