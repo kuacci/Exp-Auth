@@ -1,5 +1,5 @@
-@url=http://localhost:7001/api/users
-@loginUrl=http://localhost:7001/api/auth/login
+@url=http://localhost:3001/api/users
+@loginUrl=http://localhost:3001/api/auth/login
 @json=Content-Type: application/json
 
 
@@ -7,6 +7,7 @@
 
 ### Profile
 GET {{url}}/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmN2M5ZWE5MDRlMTBmNzk1MDdkNTlkNCIsImlhdCI6MTYwMjA4NTAxMH0.-prbgrdGHnmwLs18I6qMjJPMZ4VJ9wrw3L2K-7MEpjo
 
 ### 注册
 POST {{url}}/register
